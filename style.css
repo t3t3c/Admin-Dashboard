@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  /* outline: 1px solid red; */
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Lato", sans-serif;
+}
+
+/* GENERAL */
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 2fr 10fr;
+  background-color: gray;
+}
+
+/* SIDEBAR */
+
+.sidebar {
+  background-color: #1992d4;
+  grid-row: 1 / -1;
+  color: white;
+}
+
+.logo {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.logo span {
+  font-size: 5rem;
+  margin-right: 10px;
+}
+
+.navigation {
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 30px 20px;
+  display: grid;
+  gap: 10px;
+}
+
+.navigation a {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navigation a:hover {
+  color: #ddd;
+}
+
+.navigation a:active {
+  text-shadow: 1px 1px 2px #ddd;
+}
+
+/* HEADER */
+
+.header {
+  background-color: #fff;
+}
+
+.header input {
+  color: #333;
+  font-size: 1.6rem;
+  background-color: #eee;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 30px;
+}
+
+.header input:focus {
+  outline: 1px solid #ddd;
+}
+
+
+
+/* WELCOME */
+.welcome {
+  background-color: red;
+}
+
+.main {
+  background-color: aquamarine;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 10px;
+}
+
+.tile {
+  background-color: white;
+}
+
+.left {
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+}
+
+.left div {
+  background-color: wheat;
+}
