@@ -31,6 +31,11 @@ a {
   color: inherit;
 }
 
+button {
+  border: none;
+  background: none;
+}
+
 .container {
   height: 100vh;
   display: grid;
@@ -83,7 +88,21 @@ a {
 /* HEADER */
 
 .header {
+  padding: 10px 40px 20px 20px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
   background-color: #fff;
+}
+
+.header button:hover {
+  cursor: pointer;
+  color: #444;
+  scale: 110%;
+}
+
+.header form {
+  display: flex;
+  align-items: center;
 }
 
 .header input {
@@ -93,13 +112,30 @@ a {
   border: none;
   padding: 5px 10px;
   border-radius: 30px;
+  flex-grow: 1;
+  margin-right: 10%;
 }
 
 .header input:focus {
   outline: 1px solid #ddd;
 }
 
+.account {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
 
+.account img {
+  height: 60px;
+  border-radius: 50%;
+}
+
+.account p {
+  font-size: 2rem;
+  font-weight: 600;
+}
 
 /* WELCOME */
 .welcome {
