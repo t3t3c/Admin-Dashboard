@@ -186,6 +186,7 @@ button:hover {
 
 .main {
   padding-top: 20px;
+  padding-right: 20px;
   background-color: #e2e8f0;
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -207,9 +208,9 @@ button:hover {
   grid-template-rows: 50px;
 }
 
-.left {
+.right {
   display: grid;
-  grid-template-rows: 50px 1fr 50px 1fr;
+  grid-template-rows: 50px min-content 50px minmax(0px, 1fr);
 }
 
 /* tiles */
@@ -226,12 +227,6 @@ button:hover {
 
 .projects .tile {
   border-left: 10px solid #f0b429;
-}
-
-.left .tile {
-  display: grid;
-  grid-template-rows: 1fr min-content 1fr min-content 1fr;
-  align-items: center;
 }
 
 .icons {
